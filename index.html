@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+   <!-- SODV 1201 Introduction to Web Programming 
+         SODV 1201 Term Project- Co-Worker Office Space 
+          Program designed and coded by: SODV 1201 Group 2: Sasha Greene,  Gurleen Kaur, Paul K Kho, Evan Maclean
+          Instructor:                   Dima Marachi
+          Due       :     Phase 1   : June 2 2022
+                          Phase 2   : June 24 2022 
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SODV 1201 Term Project - CoWorker Workspace </title>
+    <link rel="stylesheet"  href="sodvtermproject.css" >
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" >
+    </script>
+</head>
+<body>
+    <h1>  <img src="work center icon.jpg" height="100" width="100" >
+        Co-op Work Space Office Center 
+      <img src="Project Icon.png" height=" 100" width="100">
+  </h1>
+  <header > 
+    <nav> 
+        <a href="index.html"> Home </a> 
+        <a href="workspace.html"> Work Space </a> 
+        <a href="owner.html"> Owner </a> 
+        <a href="contact.html"> Contact</a> 
+    </nav>
+</header>
+<div class="container">
+      
+<div id="display_listings">
+
+</div>
+<div id="filters">
+    <h3>Filters: </h3>
+    <label for="public_transit_filter">Public Transit Available:</label>
+        <input type="checkbox" id="public_transit_filter" >
+    <label for="parking_filter">Parking Available:</label>
+        <input type="checkbox" id="parking_filter">
+    <br>
+    <label for="smoking_filter">Smoking Allowed:</label>
+        <input type="checkbox" id="smoking_filter">
+    <label for="lease_terms_filter">Choose a Lease Term:</label>
+        <select name="terms" id="lease_terms_filter" >
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+        </select>
+    <br>
+    <label for="neighbourhoods">Choose a neighbourhood:</label>
+        <select name="neighbourhoods" id="filter_neighbourhood" >
+            <option value="Thornhill">Thornhill</option>
+            <option value="Meadowbrook">Meadowbrook</option>
+            <option value="Big Hills">Big Hills</option>
+            <option value="Remo">Remo</option>
+            <option value="Central">Central</option>
+        </select>
+    <br>
+
+    <label for="filter_capacity">Capacity: </label>
+        <input type="text" id="filter_capacity_min" value=0 size="5"> - <input type="text" id="filter_capacity_max"value=20 size="5">
+    
+
+    <label for="filter_square_feet">Square Feet: </label>
+     <input type="text" id="filter_square_feet_min" value=0 size="5"> - <input type="text" id="filter_square_feet_max" value="2000" size="5">
+    <br>
+
+    <label for="filter_price">Price: </label>
+        <input type="text" id="filter_price_min"value =0 size="5"> - <input type="text" id="filter_price_max"value=3000 size="5">
+    
+
+    <label for="filter_address">Enter Address: </label>
+     <input type="text" id="filter_address" value="Queen" size="10">
+    <br>
+
+    <input type="button" value="Apply Filters" onclick="ApplyFilters()">
+</div>
+
+<div id="property_management">
+<h3>Property Management: </h3>
+<input type="text" id="delist_input_id" value="listing1"> 
+<input type="button" value="Delist Property" onclick="Delist();">
+</div>
+</div>
+<footer> 
+    Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022. 
+ </footer>
+<script src = "sodv1201termproject.js"> </script>
+</body>
+</html>

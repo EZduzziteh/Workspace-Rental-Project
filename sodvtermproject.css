@@ -1,0 +1,226 @@
+/* SODV 1201 Introduction to Web Programming 
+SODV 1201 Term Project- Co-Worker Office Space 
+ Program designed and coded by: SODV 1201 Group 2: Sasha Greene,  Gurleen Kaur, Paul K Kho, Evan Maclean
+ Instructor:                   Dima Marachi
+ Due       :     Phase 1   : June 2 2022
+                 Phase 2   : June 24 2022 
+*/
+
+body {
+    font-size: 16px;
+    font-family: system-ui;
+    background: -webkit-radial-gradient(top left, #90F6FB, #2C3283);
+}
+
+.form {
+    width: 100%;
+
+}
+
+h2 {
+    text-align: center;
+    color: #efbe58;
+
+}
+
+form {
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    border: 5px;
+    background-color: white;
+    margin: 4% auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label i {
+    color: #999;
+    font-size: 80%;
+}
+
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #a9bae64a;
+}
+
+.box {
+    padding-bottom: 10px;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label,form-inline input
+    {
+        display:inline-block;
+        width:auto;
+        padding-right:15px;
+    }
+    .error {
+        color:red;
+        font-size: 90%;
+    
+
+    }
+    input[type="text"]{
+outline:none;
+    }
+    input[type="submit"]{
+        font-weight :200;
+        font-size: 110%;
+        background-color: #efbe58;
+        border-color:#efbe58;
+        box-shadow: 0 3px 0 #bd432e;
+        color:white;
+        margin-top:10px;
+        cursor:pointer;
+    }
+    input[type="submit"]:hover{
+        background:#bd432e;
+        border-color:#bd432e;
+    }
+
+    #filters{
+        text-align: center;
+        align-content: center;
+        background-color: gray;
+        padding:1%;
+        width:600px;
+        border: solid black 2px;
+    }
+    #property_management{
+        text-align: center;
+        align-content: center;
+        background-color: lightblue;
+        padding:1%;
+        margin-right: 50%;
+        border: solid black 2px;
+        width:600px;
+    }
+    #display_listings{
+        text-align: left;
+        align-content: left;
+        background-color: lightblue;
+        padding:1%;
+        margin-right: 50%;
+        border: solid black 2px;
+        width:600px;
+    }
+    
+
+    header {
+        background: #bbb6b6;
+        background-size: center;
+        background-position: center;
+        height: 75px;
+    }
+    
+    nav {
+        position:  relative;
+        text-align: center;
+        font-size: 48px;
+        height: 20px;
+        width: 100%;
+    }
+    
+    .container {
+        border:#6c25dd;
+        background: #d39650;
+        height: 600px;
+        width: auto;
+    }
+    
+    .left_box {
+        float: left;
+        background: #5691ac;
+        text-align: center;
+        padding: #5d9736 5px;
+        height: 400px;
+        width:  50%;
+    }
+    
+    .right_box {
+        float: right;
+        background: #aab3ad;
+        text-align: center;
+        padding: #5d9736 5px;
+        height: 400px;
+        width:  50%;
+    }
+    
+    form {border: 3px solid #f1f1f1;}
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #34a7c4;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #d8372b;
+    }
+    
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    
+    footer {
+        text-align: center;
+    }
